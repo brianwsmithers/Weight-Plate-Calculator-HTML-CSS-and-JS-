@@ -1,0 +1,52 @@
+.h2 {
+	font-family: Arial;
+	text-align: center;
+}
+
+.p1 {
+	font-family: Arial;
+	text-align: center;
+}
+
+label {
+	font-family: Arial;
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+}
+
+body {
+	text-align: center;
+}
+
+
+input {
+	text-align: center;
+	width: 10%;
+	padding: 12 px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input[type=text]:focus {
+	background-color: #F28C8C;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	background-color: #800000;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+
+/* Add a hover effect if you want */
+input[type=button]:hover {
+  opacity: 0.80;
+}
+
+

@@ -5,8 +5,6 @@
 	<link rel="stylesheet" href ="weightPlateStyle.css">
 </head>
 
-<div class="container">
-
 <!-- Header -->
 <h1 class="h2"> Weight Plate Calculator</h1>
 <p class="p1"> Enter the amount of weight that you want to lift and press <b>Calculate</b>. This weight plate <br>
@@ -32,29 +30,23 @@
 
 	<label for="twoAndOneHalfPounds">2.5 lbs</labels><br>
 	<input type="text" id="twoAndOneHalfPounds" name="twoAndOneHalfPounds" value="" readonly><br>
-
-<p>
+	
+	<p>
 	<input type="button" onclick="calculateWeights()" value="Calculate"><br>
-</p>
+	</p>
 </form>
 
-</div>
-
 <script>
-
 // Script for calculating the number of plates for each side of the bar.
 function calculateWeights() {
 	// Get the value of id="weight", remove weight of the bar and divide by two.
-	// 145 lbs ouput should give 2, 25 lbs input.
+	// 145 lbs input should return 1 45 lbs plate and 1 5 lbs plate for the output.
 	var x = document.getElementById("weight").value;
 	
 	if (x > 45) {
-	
 		x = x - 45.0;
 		x = x / 2;
-	
 	if (x % 2 == 0 || x % 2.5 == 0) {
-	
 		var fourtyFivePoundsCounter = 0;
 		var twentyFivePoundsCounter = 0;
 		var tenPoundsCounter = 0;
@@ -90,11 +82,8 @@ function calculateWeights() {
 		document.getElementById("tenPounds").value = tenPoundsCounter;
 		document.getElementById("fivePounds").value = fivePoundsCounter;
 		document.getElementById("twoAndOneHalfPounds").value = twoAndOneHalfPoundsCounter;
-		
 		}
 	}
 }
-
 </script>
-
 </html>

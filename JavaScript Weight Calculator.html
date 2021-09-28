@@ -36,11 +36,11 @@
 	</p>
 </form>
 
-<script>
 // Script for calculating the number of plates for each side of the bar.
+<script>
 function calculateWeights() {
 	// Get the value of id="weight", remove weight of the bar and divide by two.
-	// 145 lbs input should return 1 45 lbs plate and 1 5 lbs plate for the output.
+	// 145 lbs input should return one 45 lbs plate and one 5 lbs plate for the output.
 	var x = document.getElementById("weight").value;
 	
 	if (x > 45) {
@@ -57,7 +57,7 @@ function calculateWeights() {
 			if (x >= 45) {
 				fourtyFivePoundsCounter++;
 				x = x - 45;
-				}
+			}
 			else if (x >= 25) {
 				twentyFivePoundsCounter++;
 				x = x - 25;
@@ -76,7 +76,7 @@ function calculateWeights() {
 			}
 		}
 		
-		// Put the value in the id="weight" textbox
+		// Put the correct output in the associated textfield...
 		document.getElementById("fourtyFivePounds").value = fourtyFivePoundsCounter;
 		document.getElementById("twentyFivePounds").value = twentyFivePoundsCounter;
 		document.getElementById("tenPounds").value = tenPoundsCounter;
